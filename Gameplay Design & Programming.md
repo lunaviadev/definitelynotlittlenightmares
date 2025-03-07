@@ -15,98 +15,19 @@ Weighting: 100%
 <!-- TODO: Confirm topics with Maggie -->
 
 Your development commentary must detail your individual input to the project, the research conducted and its application. Your research must be centred around answering **ONE** of the following questions:
-1. What are the different ways in which the experience of immersion has been theorised, and which theorisation, if any, is most relevant to video games? Draw on relevant scholarship and your analysis of appropriate video game examples.  
+
 2. Will video games inevitably mature into a new narrative artform driven by their storytelling ambitions? Consider different narrative structures deployed by game designers and the player’s role in experiencing and constructing game stories.  
-3. What does it mean to approach a video game from a ludological standpoint, and should theories relating to rules, games, and play be central to the analysis of video games?  
-4. How does the design of video game space affect the actions and experiences of players? Consider how different game spaces have been categorised in the literature and concepts of space and place discussed in the lecture.  
-5. What are the key similarities and differences between the formal aspects of the video game and film? And, what can the answer to this question tell us about the relationship between them? Consider aspects like narrative and the concept of remediation covered in lecture six. 
-6. Are all video games essentially simulations that give players a new degree of control over media texts, or does considering the medium through the concept of simulation suggest it has the power to train their players to behave in certain ways? 
 
-## Key Requirements
-
-### Windows Executable (LO3 & LO2)
-Provide a **desktop build** of your project (e.g., .exe) that can be run on a local machine. The build should be made available via [**itch.io**](https://itch.io/). Ensure the build includes all necessary files and instructions for execution.
-
-### Source Code (LO3 & LO2)
-Provide a online repository containing all source code for the developed project. the version provided must be inline with the project outcome.
-
-### Project Commentary of 2,500 words (LO1 & LO2)
-Provide a **project commentary** detailing the process of developing the project. The project commentary is a piece of technical and academic writing. 
-
-## Submission Deliverables
-
-### Development Commentary  
-Submit a Development Commentary in **.html format** with a word count of 2,500 words. This can be:  
-- Hosted online as part of a **portfolio website**.  
-- Presented as a **README file** in a GitHub repository.  
-- Uploaded directly as a **standalone file**.  
-
-#### Content Requirements  
-The Development Commentary must include:
-
-##### Inline Citations and Bibliography  
-- Use **inline citations** for all referenced sources in the [university's Harvard citation format](https://mylibrary.uca.ac.uk/referencing).  
-- Include a **full bibliography** at the end of the document, listing all sources used.  
-
-##### Declaration of Assets and Tools  
-- Clearly declare any **assets** or **AI tools** used during the project, including asset packs, external code, or AI-generated content.
-
-##### Media and Code Usage
-- Incorporate **videos**, **GIFs**, **diagrams**, and **screenshots** to visually demonstrate your progress and outcomes.  
-- Provide **code snippets** where relevant (do not take screenshots of code).  
-- Embed **blueprints** to showcase technical implementations when appropriate.
-
-#### Research Requirements
-You are required to research **at least one source from each of the following categories** and provide a critical analysis in your Development Commentary. You are encouraged to explore additional sources to further strengthen your project and deepen your understanding.
-
-##### Categories of Sources
-1. **Games/Software Sources**:  
-   - Research relevant games or software that relate to your project.  
-   - Provide a brief description of the source, highlighting its relevance and key takeaways.  
-   - Analyse the approach taken in the source and discuss how it influences your project.
-
-2. **Academic Sources**:  
-   - Include academic articles, books, or research papers that provide theoretical insights.  
-   - Summarise the key points from the source and explain how it informs your development process.  
-   - Discuss how academic research has shaped your decision-making.
-
-3. **Documentation/Videos**:  
-   - Use documentation, tutorials, or instructional videos to support your technical implementation.  
-   - Provide a brief overview of the source, detailing the topics covered.  
-   - Analyse the source’s usefulness and explain how it helped solve specific challenges or guided your project.
-
-###### Analysis Requirements
-- For each source, your analysis should go beyond summarising content.  
-- Discuss **how** the source informed your decisions, influenced your project, or changed your approach.  
-- Provide **specific examples** from your project to demonstrate the impact of your research.
-
-#### Word Count  
-- The **Development Commentary** must be within **-10% to +10%** of the specified word count.  
-- The following **do not contribute** to the word count:  
-  - Headings  
-  - Bibliographies  
-  - Declared assets  
-  - Code snippets  
-  - Figure titles and descriptions  
-
-### Repository Link  
-- If the Development Commentary is submitted as a **standalone .html file** or hosted online, it must include a link to a **publicly accessible repository** (e.g., GitHub) containing your **source code** and/or **project files**.  
-- If the Development Commentary is presented as a **Git repository README**, this requirement is automatically fulfilled.
-
-### Build Link  
-- Include a link to a **publicly accessible build** of the project.  
-- Provide **clear instructions** on how to run or use the build.
-
-<br>
-<br>
-<br>
 
 # Development Commentary Template
 
 ## Project Outline (Suggested Word Count 500) 
-- Provide a concise description of the project, including its core concept and purpose.  
-- Outline the initial goals or objectives you aim to achieve.  
-- Identify any anticipated challenges or potential issues that may arise during development.
+
+- For this project I aim to create a near replica of a Little Nightmares II (LITTLE NIGHTMARES II | Official Website (EN), 2021) area that faithfully emulates and recreates the style, feel and gameplay of the source game. The core concept of the project is to have 3 main rooms in which the player progresses through, completing small physics based puzzles whilst fending themselves off from an array of enemies in order to solve the room's larger puzzle and ultimately break out ad escape the facility they are trapped in. The purpose of this project is to highlight my abilities as a developer to faithfully recreate gamestyles and present a workflow that would be industry standard whilst providing proof of my prowess as a developer to use in my personal portfolio. 
+
+- The initial goals for this project are to faithfully recreate the feel and mechanics of Little Nightmares II due to its successes as a narrative horror that provides the player with an original and unique form of storytelling as they progress through the meticulously crafted world of Little Nightmares II. Little Nightmares II is one of the most successful in it's genre selling over 1 million copies in its first month on the market (Little Nightmares II reaches 1 million units sold! | Bandai Namco Europe, 2021) marking it as one of their highest grossing games. For reasons such as these, using Little Nightmares to base my project off and recreate their gameplay style and storytelling through environment would be one of my primary goals. Secondarily, I would like to be able to implement their fundamental mechanical systems faithfully, such as the flashlight that is used to stun enemies in the game, and the enemy tracking / chasing systems that define the series. 
+
+- When it comes to the challenges I'll momst likely face during my time developing the project, adjusting to working in Blueprints and Unreal in general will most likely be my biggest challenges. Given that Blueprints and Unreal are vastly different to enginges I have worked in before and languages I have programmed in, my biggest learning curve will be getting used to programming primarily in Blueprints and using C++ to support my blueprint work. Futhermore getting enemy AI to work as intended may provide a significant challenge 
 
 ## Research (Suggested Word Count 1,100) 
 
@@ -190,9 +111,12 @@ You are required to research **at least one source from each of the following ca
 - Consider any new tools, techniques, or approaches you would explore in future projects to achieve better results.
 
 ## Bibliography  
-- Compile a complete list of all sources referenced throughout your project. This may include articles, journals, videos, games, software, documentation, or any other materials.  
-- Ensure all references are formatted according to the [university's citation method](https://mylibrary.uca.ac.uk/referencing).  
-- Organise your references in alphabetical order. Alternatively, you may separate them by type (e.g., academic sources, games, videos), but consistency is key.
+
+LITTLE NIGHTMARES II | Official Website (EN) (2021) At: https://en.bandainamcoent.eu/little-nightmares/little-nightmares-ii (Accessed  07/03/2025).
+
+Little Nightmares II reaches 1 million units sold! | Bandai Namco Europe (2021) At: https://en.bandainamcoent.eu/news/little-nightmares-ii-reaches-1-million-units-sold (Accessed  07/03/2025).
+
+
 
 ## Declared Assets
 - Provide a detailed list of any third-party assets used in the project.  
