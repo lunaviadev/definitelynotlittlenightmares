@@ -51,6 +51,8 @@ When analysing my approach from an academic standpoint, I turned to 'The Medium 
 ### Documentation Sources  
 When starting on my project I knew going in that I would need to do a fair amount of research to further my ability to create efficent and functioning blueprints. As this was my first time working within Unreal Engine the support would be necessary. Using Gorka Games' AI video (The Easiest Way to Make a Simple Enemy AI in Unreal Engine 5, 2022) and Smart Poly's (How To Make Squid Game in Unreal Engine 5.5 (Tutorial), 2025) I was able to efficently understand how to create enemy AI that was simultaneously applicable to my very needs in my project but also flexible enough to widen my understanding if I needed to create further AI styles in my project. Alongside video tutorials, I also did deeper dives into Unreal Engine's documentation for blueprinting. I specifically knew that I was unfamilar with Unreal engine's UI systems and thus turned to (UI Widget Editor in Unreal Editor for Fortnite | Unreal Editor for Fortnite Documentation | Epic Developer Community, s.d.) such documentation to assist my ability to understand their widgeting and UI development in order to assist me in creating menus, options and so forth. 
 
+
+
 ## Implementation (Suggested Word Count 1,100)  
 
 ### Process
@@ -94,6 +96,7 @@ Creating these level-based mechanics would further enhance the likeness when it 
 
 ![alt text](image-3.png)
 *Figure 9. The climbable rope in the final game*
+
 
 
 
