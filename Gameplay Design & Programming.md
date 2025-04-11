@@ -53,7 +53,7 @@ When starting on my project I knew going in that I would need to do a fair amoun
 
 
 
-## Implementation (Suggested Word Count 1,100)  
+## Implementation  
 
 ### Process
 
@@ -130,62 +130,76 @@ The final thing to implement from our initial blockout and concepting was the bi
 
 *Figure 16. Blueprint for a scrapped mechanic. Early in concepting I wanted to allow for the mother to be killed in the final room by pushing an object onto her head, ultimately knocking her out and killing her before you exited the level. The blueprint you see is scraps of that mechanic, though ultimately due to time constraints I was unable to get this mechanic to work as intended or fully fuctional, so it was scrapped.*
 
+And with those mechanics showcased, all that was left for me to do was to piece everything together and create a fully finished product. I added additional blueprints here and there to fix mechanics, add some functionality but the ones shown here were the large bulk of the unique mechanics I had created.
 
+<iframe src="https://blueprintue.com/render/bb3oodd7/" scrolling="no" allowfullscreen></iframe>
 
-### New Approaches  
-- Detail any innovative or new approaches you explored during the project.  
-- Explain why these approaches were chosen and how they differ from standard practices.  
-- Evaluate the success of these approaches, including any challenges faced and lessons learned.
+*Figure 17. The full blueprint for the main character.*
+
+<iframe src="https://blueprintue.com/render/dhfe30yn/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 18. The level blueprint*
+
 
 ### Testing
-- Document the user testing conducted, specifying the type of tests used (e.g., automated testing, guided user testing, blind testing).  
-- Present feedback or issues identified during testing, using graphs, tables, or visual aids to summarise results.  
-- Describe how these issues were addressed. If any issues were not resolved, provide a clear justification for leaving them unaddressed.
+
+During week 6 of the project we conducted class wide user testing in order to gain feedback and posted a forum for playtesters to fill out to allow us to gain a greater insight on how to improve the project. These were the results we gained that ultimately allowed us to realise that people took issue with some of the layout being finnicky and a bit jank and other segments feeling a bit unfair or unfun in general that we later adjusted.
+
+*Figure 19. Screenshot of the google forms results that were taken during week 6's testing phase when we had other groups playtest our prototype and provide feedback.*
 
 ### Technical Difficulties
-- Identify any technical difficulties encountered during the implementation phase.  
-- Provide details on how these issues were diagnosed and resolved.  
-- If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
-- Reflect on what you would do differently in future projects to avoid similar issues.
 
-## Outcomes (Suggested Word Count 300) 
+As previously mentioned I had a few technical difficulties when it came to certain mechanics not working, specifically with certain things like Figure 12's start button not working when creating a shipping build of the game. The issue was being caused by using By Name instead of By Reference and thus was an easy fix. 
+
+I also had issues when it came to Figure 16's scrapped mechanic. This one went unresolved and unfortunately had a larger impact on the storytelling aspect and the narrative we were trying to provide with the game, rather than giving the player the choice to just leave or to kill the mother then leave. This had to be scrapped as for some reason the detection would not work despite registering as it would 
+during debugging.
+
+On the whole though I did not encounter all too many technical difficulties as most issues just boiled down to my unfamiliarity with Unreal Engine as I was still learning the ropes of the engine.
+
+## Outcomes 
 
 ### Source Code/Project Files
-- Provide a link to your complete source code or project files.  
-- Ensure the link is publicly accessible or shared with the appropriate permissions.  
-- Include a brief description of the files provided, highlighting key components or any instructions required to run the project.
+
+{Github Repository Link} : https://github.com/lunaviadev/definitelynotlittlenightmares
+
+Contains all source code files + UPROJECT file. 
 
 ### Build Link
-- Share a link to a playable or executable build of your project.  
-- Ensure the build is accessible across relevant platforms and is publicly accessible.  
-- Include any necessary instructions for running the build, such as system requirements or installation steps.
+{Itch.io final build Link} : https://github.com/lunaviadev/definitelynotlittlenightmares
+
+Contains a downloadble exe of the game.
 
 ### Video Demonstration
-- Embed a video or provide a link to a recorded demonstration of your project in action.  
-- The video should showcase key features, functionality, and any unique elements of your project.  
-- Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.
 
-## Reflection (Suggested Word Count 500) 
+{Youtube Demonstration Link} : https://youtu.be/JHiohJnSq1Y?si=9JZdGX5W7jha1Ic8
+
+Contains a 4 minute walkthrough of the game.
+
+## Reflection 
 
 ### Research Effectiveness  
-- Assess the usefulness of the research conducted during the project.  
-- Highlight which sources (games, academic, documentation) had the most significant impact on your work and explain why.  
-- Identify any research gaps or areas where additional information could have improved your project outcomes.
+For me personally, the research served as a crucial point for determining the outcome of my project. Having taken prior time to research certain subjects such as the developer interviews and documentation of unreal engine I figured I would be able to make a much better, more polished user experience that was extremely faithful to the source material that I was trying to replicate.
+
+Though I feel as if I could've spent more time researching into academic sources as I felt my academic studies went fairly underutilised. Despite the general benefit I initially saw with my previous academic research, the philosophies proposed did not ultimately benefit me much when it came to designing or creating my project, nor influencing my outcomes and thus I decided fairly early on that academic research was not necessary in comparison to my game and documentation research.
 
 ### Positive Analysis 
-- Reflect on the successful aspects of the project.  
-- Highlight specific elements that worked well, such as technical solutions, creative decisions, or user feedback.  
-- Provide evidence to support your analysis, such as test results, screenshots, or user comments.
+
+Looking back on the project having completed it, I would definitely say that the most successful aspects of the project were the uniqueness of the rooms and gameplay styles. Having more parkour and platforming focus in the first room, puzzle focus in the second room, then stealth focus in the final room, I felt I was able to accurately capture the three core fundamental styles of Little Nightmares gameplay and integrate it into the project to create something similar to the source material.
+
+Working closely with my designer Goose also helped massively when it came to this project. Throughout the entire project he was incredibly cooperative and was able to cover for my weaknesses when working in Unreal engine, like setting up our camera systems and importing animations. Areas I was particularly unconfident in doing.
+
+Futhermore, our initial playtest during week 6 served to be incredibly useful to tweaking gameplay elements. Finding out what people found frustrating, what they enjoyed and what they thought needed changing was incredibly useful to ultimately shaping a better project.
 
 ### Negative Analysis  
 - Identify the areas of the project that did not go as planned or could have been improved.  
 - Discuss challenges you faced, whether technical, creative, or time-related, and evaluate their impact on the final product.  
 - Reflect on any mistakes or missteps and what you learned from them.
 
+I think the biggest mistep of the project was definitely my ambition. Having the alloted time and a larger group, I wanted to strive to create something quite ambitious for what was expected of me and I think due to the sheer amount of mechanics, features and various other elements that I wanted to integrate I got a bit lost in the project and ended up overwhelming myself, burning myself out and ultimately causing myself a lot of stress. This definitely lead to the game overall not having as much polish as I would've liked it to as I was reaching the end of the project's alloted time and struggling to wrap it up and provide a complete package, which ended up with mechanics scrapped, ideas half baked and a generally less polished product than I intended to create.
+
 ### Next Time
-- Outline what you would do differently if you were to undertake a similar project again.  
-- Suggest improvements to your workflow, research methods, or implementation process based on your reflections.  
-- Consider any new tools, techniques, or approaches you would explore in future projects to achieve better results.
+
+The biggest takeaway for me would just to manage my mechanics and time more effectively. Creating a better work schedule for myself that better outlined what I wanted to achieve for any given session rather than just approaching a work session with the mentality of 'I'll get what I feel like getting done' and then ultimately hap-hazardly working on various features at once and bouncing between them would be a method I do not use again. I think structure for this would've benefitted me greatly.
 
 ## Bibliography  
 
@@ -215,3 +229,6 @@ UI Widget Editor in Unreal Editor for Fortnite | Unreal Editor for Fortnite Docu
 
 ## Declared Assets
 
+Janitor Model Little Nightmares II - https://sketchfab.com/3d-models/janitor-little-nightmares-ee2cbfe4e90b45bc873a3516ca0a4550
+
+All other assets and music seen in the final product were created by people who were working on the project.
