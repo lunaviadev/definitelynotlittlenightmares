@@ -1,8 +1,7 @@
-# Assignment Information
 
-2326296 Liliana Bellas
 
-## Task Outline
+
+# 2326296 Liliana Bellas - Little Nightmares Project
 
 Gameplay Design and Programming
 
@@ -45,21 +44,60 @@ Furthermore, looking in on an interview for the upcoming Little Nightmares III (
 
 
 ### Academic Sources  
-- Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
-- Describe how the academic research applies to your project and shapes your design and development decisions.
+
 
 When analysing my approach from an academic standpoint, I turned to 'The Medium of Video Games' (The Medium of Video Games | Mark J.P. Wolf, 2001) to aid my understanding of what allows a vide game to trascend it's base inspirations of movie and boardgames to its own expansive art form. Turning to page 93, we understand that as graphics and technology evolved, so did the stories that were told throughout video game history. Mark notes that video games started as merely another form of entertainment, arcaic in nature and simplistic in execution. Though looking to the modern day, games like The Last of Us are pushing expectations of what it means to be a video game, using its narrative and storytelling to surpass the quality of many movies at the time, quickly raising to the top of charts and dominate the space. 
 
 ### Documentation Sources  
-- Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
-- Explain how this technical knowledge supports your project work and guides your decision-making process.
+When starting on my project I knew going in that I would need to do a fair amount of research to further my ability to create efficent and functioning blueprints. As this was my first time working within Unreal Engine the support would be necessary. Using Gorka Games' AI video (The Easiest Way to Make a Simple Enemy AI in Unreal Engine 5, 2022) and Smart Poly's (How To Make Squid Game in Unreal Engine 5.5 (Tutorial), 2025) I was able to efficently understand how to create enemy AI that was simultaneously applicable to my very needs in my project but also flexible enough to widen my understanding if I needed to create further AI styles in my project. Alongside video tutorials, I also did deeper dives into Unreal Engine's documentation for blueprinting. I specifically knew that I was unfamilar with Unreal engine's UI systems and thus turned to (UI Widget Editor in Unreal Editor for Fortnite | Unreal Editor for Fortnite Documentation | Epic Developer Community, s.d.) such documentation to assist my ability to understand their widgeting and UI development in order to assist me in creating menus, options and so forth. 
 
 ## Implementation (Suggested Word Count 1,100)  
 
 ### Process
-- Provide a step-by-step breakdown of your development process, including key milestones and decisions made throughout the project.  
-- Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
-- Include screenshots, diagrams, or code snippets where relevant to showcase your progress.
+
+The project began by assigning everyone to their own seperate roles once we were sorted into our group. As the only developer of the group, my first action was to create a player controller and very basic fundamentals of the Little Nightmares II control scheme and mechanics in order to run in a sandbox environment. My first priority was to recreate the enemy sense and chase from Little Nightmares as that is the most prominent feature of the game. 
+
+<iframe src="https://blueprintue.com/render/kkeho_pw/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 1. A blueprint of the enemy roaming code, showcasing the various functions the enemy is intended to have, like damaging player and sensing when the player is in range. Note that there are two versions of damaging the player, this was due to the first one not working as intended and thus a later fix was made.*
+
+<iframe src="https://blueprintue.com/render/bd5726ct/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 2. A blueprint of the static enemy code, this was done as an alternative enemy type that would remain still until they spot the player rather than roaming around the level constantly, this doesn't utilise a blackboard unlike the roaming enemy which used a blackboard to assist with its roaming functionality.*
+
+![alt text](image.png)
+
+*Figure 3. A screenshot of the blackboard used for the enemy roaming AI*
+
+With the initial two enemy AI types set up and working, the next course of action was to begin creating a level the player would actually be able to run around in and start implementing level based mechanics like the ability to grab boxes and climb ropes.
+
+![alt text](image-1.png)
+
+*Figure 4. A later in development screenshot showcasing a rope and a bookshelf in the back that would be interactable, this screenshot came much later than the blockout though showcases some of the core level mechanics I wanted to integrate*
+
+Creating these level-based mechanics would further enhance the likeness when it came to comparing to the source material and thus set out to create a very basic ladder-like blueprint that would allow the player to scale it if they stood close. 
+
+<iframe src="https://blueprintue.com/render/8ej8l1o2/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 5. My blueprint for the aforementioned ladder based level mechanic. Through a mix of variables and overlap checks, I was able to create a blueprint that checks whether or not the player is close enough to the ladder then turn on the variable that would set their movement mode to walk as they scaled the ladder. This method did eventually have its issues however it worked well enough for what I wanted it to do.*
+
+<iframe src="https://blueprintue.com/render/hezda0ap/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 6. An additional blueprint highlighting some of the changes made to the default player input system to allow for the ladder blueprint to work, adjusting movement speeds and axis values to actually allow the player to scale any ladder or rope they were climbing up.*
+
+<iframe src="https://blueprintue.com/render/31-a9-ik/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 7. My blueprint for the moveable boxes. In full honesty this blueprint is a mess and I can't really sugarcoat that. I attempted to create a system that, upon overlap with a collision box, the full object would attach to the actor, this then allowed the actor to continue to hold the button and move around the scene, this in theory did work and in execution also continued to work, though was not the most glamorous solution to the mechanic I was trying to solve. Though on later reflection I realised there were probably more elegant methods to doing this but hindsight is 2020*
+
+![alt text](image-2.png)
+*Figure 8. The moveable book in the final game*
+
+![alt text](image-3.png)
+*Figure 9. The climbable rope in the final game*
+
+
+
+
 
 ### New Approaches  
 - Detail any innovative or new approaches you explored during the project.  
@@ -118,6 +156,8 @@ When analysing my approach from an academic standpoint, I turned to 'The Medium 
 
 ## Bibliography  
 
+(In order that they appear in this write-up)
+
 LITTLE NIGHTMARES II | Official Website (EN) (2021) At: https://en.bandainamcoent.eu/little-nightmares/little-nightmares-ii (Accessed  07/03/2025).
 
 Little Nightmares II reaches 1 million units sold! | Bandai Namco Europe (2021) At: https://en.bandainamcoent.eu/news/little-nightmares-ii-reaches-1-million-units-sold (Accessed  07/03/2025).
@@ -131,6 +171,13 @@ Little Nightmares - Andreas Johnson & Dave Mervik Interview (2016) At: https://w
 Little Nightmares III – Producer Interview | Bandai Namco Europe (2023) At: https://en.bandainamcoent.eu/little-nightmares/news/little-nightmares-iii-producer-interview (Accessed  04/04/2025).
 
 Wolf, M. J. P. (2002) The Medium of the Video Game. (s.l.): University of Texas Press.
+
+The Easiest Way to Make a Simple Enemy AI in Unreal Engine 5 (2022) At: https://www.youtube.com/watch?v=xm-7m5Fw1HU (Accessed  11/04/2025).
+
+How To Make Squid Game in Unreal Engine 5.5 (Tutorial) (2025) At: https://www.youtube.com/watch?v=YIB3w2Ng-qQ (Accessed  11/04/2025).
+
+UI Widget Editor in Unreal Editor for Fortnite | Unreal Editor for Fortnite Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/uefn/ui-widget-editor-in-unreal-editor-for-fortnite?application_version=1.0 (Accessed  11/04/2025).
+
 
 
 ## Declared Assets
