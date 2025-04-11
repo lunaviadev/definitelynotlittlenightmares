@@ -46,7 +46,7 @@ Furthermore, looking in on an interview for the upcoming Little Nightmares III (
 ### Academic Sources  
 
 
-When analysing my approach from an academic standpoint, I turned to 'The Medium of Video Games' (The Medium of Video Games | Mark J.P. Wolf, 2001) to aid my understanding of what allows a vide game to trascend it's base inspirations of movie and boardgames to its own expansive art form. Turning to page 93, we understand that as graphics and technology evolved, so did the stories that were told throughout video game history. Mark notes that video games started as merely another form of entertainment, arcaic in nature and simplistic in execution. Though looking to the modern day, games like The Last of Us are pushing expectations of what it means to be a video game, using its narrative and storytelling to surpass the quality of many movies at the time, quickly raising to the top of charts and dominate the space. 
+When analysing my approach from an academic standpoint, I turned to 'The Medium of Video Games' (The Medium of Video Games | Mark J.P. Wolf, 2001) to aid my understanding of what allows a vide game to trascend it's base inspirations of movie and boardgames to its own expansive art form. Turning to page 93, we understand that as graphics and technology evolved, so did the stories that were told throughout video game history. Mark notes that video games started as merely another form of entertainment, arcaic in nature and simplistic in execution. Though looking to the modern day, games like The Last of Us are pushing expectations of what it means to be a video game, using its narrative and storytelling to surpass the quality of many movies at the time, quickly raising to the top of charts and dominate the space. This environmental narrative approach that games like The Last of Us use would definitely be a core design concept I would be integrating into my project to further its ability to standalone as its own art form as opposed to it just being another piece of interactive media.
 
 ### Documentation Sources  
 When starting on my project I knew going in that I would need to do a fair amount of research to further my ability to create efficent and functioning blueprints. As this was my first time working within Unreal Engine the support would be necessary. Using Gorka Games' AI video (The Easiest Way to Make a Simple Enemy AI in Unreal Engine 5, 2022) and Smart Poly's (How To Make Squid Game in Unreal Engine 5.5 (Tutorial), 2025) I was able to efficently understand how to create enemy AI that was simultaneously applicable to my very needs in my project but also flexible enough to widen my understanding if I needed to create further AI styles in my project. Alongside video tutorials, I also did deeper dives into Unreal Engine's documentation for blueprinting. I specifically knew that I was unfamilar with Unreal engine's UI systems and thus turned to (UI Widget Editor in Unreal Editor for Fortnite | Unreal Editor for Fortnite Documentation | Epic Developer Community, s.d.) such documentation to assist my ability to understand their widgeting and UI development in order to assist me in creating menus, options and so forth. 
@@ -97,8 +97,38 @@ Creating these level-based mechanics would further enhance the likeness when it 
 ![alt text](image-3.png)
 *Figure 9. The climbable rope in the final game*
 
+After testing and running both these mechanics within the game environment I quickly figured out that the rope mechanic could be a bit tough to angle properly so that the player was sent upwards. This was due to an issue with the hitbox I had placed on it, I quickly adjusted the collision box to allow the player to approach it from any angle and still climb it, this made it significantly easier to use in gameplay.
 
+![alt text](image-4.png)
+*Figure 10. The adjusted collision box for the rope obect*
 
+My next step was to ensure that there was functioning menus, title screen and allowing the player to restart the level or return to the main menu if they so wished to avoid the player being softlocked. I planned to also integrate a few graphical options to allow the game to run on lower end pcs and provide some optimisation setting for users. I figured that providing these settings would allow the game to also be accessed by a bigger user base if I were to further develop it and market it and thus I worked on these settings.
+
+![alt text](image-5.png)
+*Figure 11. An image of the canvas for the opening menu for the game, displaying 3 options to the player.*
+
+The menus were all created using Unreal's widget system to display a widget over the player viewport when loading into certain specific levels, this was how I approached the main menu and options screen.
+
+<iframe src="https://blueprintue.com/render/_pfos5uw/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 12. Blueprints for the main menu functionality. As indicated by the commented text, each option here has its own functionality to open a seperate thing, with the start button specifically opening the level map that the game was built in. Originally the start button used By Name instead of By Reference. This was changed as By Name had issues when it came to building the project.*
+
+![alt text](image-6.png)
+*Figure 13. The options menu canvas screen, containing various options for the player to adjust*
+
+<iframe src="https://blueprintue.com/render/3xfkfjtn/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 14. Blueprint for all the options on the option menu. This blueprint was extremely lengthy due to the fact that I wanted to allow the player to save, load, quit and retain the options they had previously set on previous play sessions. I opted to using Unreal's built in graphic scaling nodes for the graphical options and vsync options. Then approaching the resolution I had to manually input the screen sizes and assign them to various pins which would then be set by using a number in an index that was changed via pressing the left or right arrows next to the options.*
+
+The final thing to implement from our initial blockout and concepting was the big boss enemy of the level. This would be 'The Mother' who would occupy the final room and turn around occasionally, killing the player if they were spotted.
+
+<iframe src="https://blueprintue.com/render/6mlhon6x/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 15. Blueprint for the mother ai, this blueprint both had the mother rotate 180 degrees on a random interval of time within a set range, it would then scan for the player and check if it was within its pawn sensing and if so apply damage to the player, this loop would repeat indefinitely, never stopping. This was the final main mechanic I wanted in the game to fully solidify the stealth aspect of the game.*
+
+<iframe src="https://blueprintue.com/render/e1ur_0l8/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 16. Blueprint for a scrapped mechanic. Early in concepting I wanted to allow for the mother to be killed in the final room by pushing an object onto her head, ultimately knocking her out and killing her before you exited the level. The blueprint you see is scraps of that mechanic, though ultimately due to time constraints I was unable to get this mechanic to work as intended or fully fuctional, so it was scrapped.*
 
 
 
